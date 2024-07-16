@@ -13,18 +13,369 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <!-- <main class="h-full bg-slate-600 grid grid-cols-12">
-      <nav class="h-24 w-screen col-span-12 bg-slate-300">
-        <div class="logo"></div>
-        <menu> </menu>
-        <button>Get Started</button>
+    <main
+      class="h-full bg-cover bg-no-repeat"
+      style="
+        background-image: url(./assets/images/bg-simplify-section-desktop.svg);
+      "
+    >
+      <!-- nav bar -->
+      <nav
+        class="h-full w-screen lg:grid grid-cols-12 py-10 lg:px-20 px-4 items-center flex justify-between"
+      >
+        <div class="logo col-span-2">
+          <img src="./assets/images/logo.svg" alt="" class="w-[7rem]" />
+        </div>
+        <menu class="col-span-8 text-xs lg:block hidden">
+          <ul class="flex gap-7 justify-center">
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </menu>
+        <button
+          class="text-xs px-2 w-28 h-[2.2rem] md:py-2 bg-red-500 rounded-3xl text-white shadow-sm shadow-orange-400 col-span-2 place-items-end lg:block hidden"
+        >
+          Get Started
+        </button>
+        <div class="hamburger lg:hidden block">
+          <img src="./assets/images/icon-hamburger.svg" alt="" />
+        </div>
       </nav>
-      <section class="h-screen w-screen bg-slate-700 col-span-12"></section>
-      <section class="h-screen w-screen bg-slate-900 col-span-12"></section>
-      <section class="h-screen w-screen bg-green-500 col-span-12"></section>
-    </main> -->
+
+      <!-- Hero Section -->
+      <section
+        class="h-auto w-screen grid grid-cols-12 p-4 lg:p-20 lg:py-10 gap-5 place-items-center"
+      >
+        <div
+          class="left col-span-12 lg:col-span-6 lg:pr-[6.8rem] justify-center flex flex-col order-2 lg:order-none"
+        >
+          <h1
+            class="font-bold text-4xl pb-8 text-slate-900 lg:text-left text-center"
+          >
+            Bring everyone together to build better products.
+          </h1>
+          <p
+            class="pb-10 text-gray-600 text-sm lg:pr-36 lg:text-left text-center"
+          >
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button
+            class="text-xs px-2 w-32 h-[2.5rem] lg:py-2 bg-red-500 rounded-3xl text-white shadow-sm shadow-orange-400 col-span-2 place-items-end m-auto lg:m-0"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="right col-span-12 lg:col-span-6 lg:mt-0 lg:mb-0 mb-6 order-1 lg:order-none"
+        >
+          <img
+            src="./assets/images/illustration-intro.svg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+      </section>
+
+      <!-- Second Section -->
+      <section
+        class="h-auto w-screen grid grid-cols-12 p-4 lg:p-20 lg:py-10 gap-5"
+      >
+        <div class="left col-span-12 lg:col-span-6 lg:pr-20">
+          <h2
+            class="font-bold text-3xl pb-6 text-slate-900 lg:text-right text-center"
+          >
+            What's different about Manage?
+          </h2>
+          <p
+            class="pb-6 text-gray-600 text-sm lg:pr-36 lg:text-right text-center"
+          >
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="right col-span-12 lg:col-span-6">
+          <div
+            class="flex lg:gap-6 gap-1 justify-center pb-10 lg:flex-row flex-col"
+          >
+            <div>
+              <button
+                class="font-semibold text-xs px-5 h-[2.1rem] bg-red-600 rounded-3xl text-white shadow-md shadow-white-600 w-auto"
+              >
+                01
+              </button>
+            </div>
+            <div>
+              <h3 class="font-bold pb-5 pt-[0.4rem]">
+                Track company-wide progress
+              </h3>
+              <p class="text-gray-600 text-sm">
+                See how your day-to-day tasks fir into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex lg:gap-6 gap-1 justify-center pb-10 lg:flex-row flex-col"
+          >
+            <div>
+              <button
+                class="font-semibold text-xs px-5 h-[2.1rem] bg-red-600 rounded-3xl text-white shadow-md shadow-white-600 w-auto"
+              >
+                02
+              </button>
+            </div>
+            <div>
+              <h3 class="font-bold pb-5 pt-[0.4rem]">
+                Track company-wide progress
+              </h3>
+              <p class="text-gray-600 text-sm">
+                See how your day-to-day tasks fir into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex lg:gap-6 gap-1 justify-center pb-10 lg:flex-row flex-col"
+          >
+            <div>
+              <button
+                class="font-semibold text-xs px-5 h-[2.1rem] bg-red-600 rounded-3xl text-white shadow-md shadow-white-600 w-auto"
+              >
+                03
+              </button>
+            </div>
+            <div>
+              <h3 class="font-bold pb-5 pt-[0.4rem]">
+                Track company-wide progress
+              </h3>
+              <p class="text-gray-600 text-sm">
+                See how your day-to-day tasks fir into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- third section -->
+      <section class="h-auto w-screen lg:p-20 lg:py-13 p-4">
+        <h1 class="font-bold text-3xl lg:pb-16 pb-6 text-center text-slate-900">
+          What they've said
+        </h1>
+
+        <swiper-container
+          class="mySwiper h-[65vh]"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="20"
+          slides-per-view="3"
+          loop="true"
+          autoplay="{loop: true, delay: 1000}"
+        >
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-ali.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Ali Bravo</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-anisha.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Anisha Li</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-richard.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Richard Watt</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-shanai.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Shanai</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <swiper-container
+          class="mySwiper2 h-[65vh]"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="20"
+          slides-per-view="1"
+          loop="true"
+          autoplay="{loop: true, delay: 1000}"
+        >
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-ali.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Ali Bravo</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-anisha.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Anisha Li</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-richard.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Richard Watt</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="relative flex justify-center">
+              <div class="pic absolute flex -top-8 justify-center">
+                <img
+                  src="./assets/images/avatar-shanai.png"
+                  alt=""
+                  class="w-[40%]"
+                />
+              </div>
+              <div
+                class="box h-auto w-auto bg-slate-200 rounded-md flex justify-center flex-col p-10 text-center text-sm mb-10"
+              >
+                <p class="font-bold pb-6">Shanai</p>
+                <p>
+                  "We have been able to cancel so many other subscriptions since
+                  using Manage. There us no more cross-channel confusion and
+                  everyone is much more focused."
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+
+        <div class="justify-center flex pb-16 pt-10">
+          <button
+            class="text-xs px-2 w-28 h-[2.2rem] md:py-2 bg-red-500 rounded-3xl text-white shadow-sm shadow-orange-400 col-span-2"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
+    </main>
     <footer class="h-96 w-screen">
       <div
         class="part1 h-auto bg-red-500 grid grid-cols-1 md:h-56 gap-2 px-24 py-10 place-items-center bg-left-bottom bg-no-repeat md:grid-cols-2"
@@ -33,7 +384,7 @@
         "
       >
         <h2
-          class="font-medium text-3xl text-white col-span-1 md:w-[65%] text-center md:text-left pb-5 md:p-0 w-auto"
+          class="font-medium text-4xl text-white col-span-1 md:w-[100%] text-center md:text-left pb-5 md:p-0 w-auto"
         >
           Simplify how your team works today.
         </h2>
@@ -47,20 +398,25 @@
       </div>
 
       <div
-        class="part2 h-auto md:h-72 p-16 grid grid-cols-6 w-screen bg-slate-800 place-content-center text-white text-sm md:px-32 px-10 md:justify-start"
+        class="part2 h-auto md:h-72 p-16 grid grid-cols-6 w-screen bg-slate-800 place-content-center text-white text-sm md:px-28 px-10 md:justify-start"
       >
-        <div class="col-span-6 md:col-span-2">
+        <!-- Fourth element on mobile, stays the same on md (logo) -->
+        <div class="col-span-6 md:col-span-2 order-4 md:order-none">
           <div
-            class="col-span-6 md:col-span-2 md:mb-24 mb-6 mx-auto text-white"
+            class="col-span-6 md:col-span-2 md:mb-24 mb-6 mx-auto md:mx-0 text-white"
           >
             <img
-              src="./assets/images/logo.svg "
+              src="./assets/images/logo.svg"
               alt=""
-              class="mx-auto text-white"
+              class="mx-auto md:mx-0 text-white"
             />
           </div>
+        </div>
+
+        <!-- Third element on mobile, stays the same on md (social icons) -->
+        <div class="col-span-6 md:col-span-2 order-3 md:order-2">
           <div class="col-span-5 md:col-span-1 md:mb-0 mb-16">
-            <div class="flex gap-5 justify-center md:justify-start">
+            <div class="flex gap-5 md:gap-2 justify-center md:justify-start">
               <img src="./assets/images/icon-facebook.svg" alt="" />
               <img src="./assets/images/icon-youtube.svg" alt="" />
               <img src="./assets/images/icon-twitter.svg" alt="" />
@@ -69,8 +425,10 @@
             </div>
           </div>
         </div>
-        <div class="col-span-6 md:col-span-2">
-          <div class="flex md:px-8 md:mb-0 mb-16 justify-between">
+
+        <!-- Second element on mobile, stays the same on md (list parents) -->
+        <div class="col-span-6 md:col-span-2 order-2 md:order-none">
+          <div class="flex md:pr-6 md:mb-0 mb-16 justify-between">
             <ul class="flex flex-col gap-4">
               <li>Home</li>
               <li>Pricing</li>
@@ -84,26 +442,38 @@
             </ul>
           </div>
         </div>
-        <div class="col-span-6 md:col-span-2 md:justify-self-end">
+
+        <!-- First element on mobile, stays the same on md (input field and button) -->
+        <div
+          class="col-span-6 md:col-span-2 order-1 md:order-none justify-center md:justify-self-end"
+        >
           <div class="flex gap-2">
             <input
               type="text"
               name=""
               id=""
-              class="rounded-2xl py-3 px-5 text-sm mb-20"
+              class="rounded-3xl py-3 px-3 w-full mb-20 text-xs"
               placeholder="Type your search here..."
             />
             <button
-              class="font-semibold text-xs px-6 py-3 bg-red-600 rounded-3xl text-white-400 shadow-md h-12 shadow-white-600"
+              class="font-semibold text-xs px-6 md:py-3 bg-red-500 rounded-3xl text-white-400 shadow-md shadow-white-600 w-auto h-11"
             >
               Go
             </button>
           </div>
-          <div class="text-gray-600 text-sm text-right order-last">
+        </div>
+
+        <!-- Last element on mobile, stays the same on md (copyright) -->
+        <div
+          class="col-span-6 md:col-span-4 justify-center md:justify-end md: order-last"
+        >
+          <div class="text-gray-600 text-xs md:text-right text-center">
             Copyright 2020. All Rights Reserved
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
